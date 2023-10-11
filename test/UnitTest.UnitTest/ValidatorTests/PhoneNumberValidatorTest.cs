@@ -12,4 +12,5 @@ public class PhoneNumberValidatorTest
         var result = validator.IsValid(examplePhone);
         Assert.True(result);
     }
+
 }
