@@ -9,7 +9,7 @@ public class UserCreationDtoValidator : AbstractValidator<UserCreationalDto>
     {
         RuleFor(x => x.PhoneNumber).NotNull()
             .NotEmpty()
-            .Length(8)
+            .Length(13)
             .Must(p => p.Substring(0, 4).Equals("+998"));
 
         RuleFor(x => x.Email).NotNull()
