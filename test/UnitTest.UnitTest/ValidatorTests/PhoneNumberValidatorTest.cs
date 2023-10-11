@@ -7,7 +7,7 @@ public class PhoneNumberValidatorTest
     [Fact]
     public void ShouldReturnCorrect()
     {
-        var validator = new PhoneNumberValidator();
+        var validator = new UserCreationDtoValidator();
         var examplePhone = "+998937349828";
         var result = validator.IsValid(examplePhone);
         Assert.True(result);
